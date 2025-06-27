@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Lexend:wght@100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lexend", sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #0F0F0F;
+    color: white;
+    padding-top: 3vh;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #0F0F0F;
+    border-bottom: 1px solid #303030;
+    width: 100%;
+    z-index: 10001;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.logo h1 span {
+    color: darkred;
+}
+
+nav {
+    display: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: clamp(1rem, 2vh, 2rem);
+    transition: all .2s;
+    font-weight: 300;
+}
+
+nav a:hover {
+    color: darkred;
+}
+
+.logo h1 {
+    font-size: clamp(1.4rem, 2vw, 2rem);
+}
+
+.nav-btn {
+    border: none;
+    outline: none;
+    padding: 0.5rem 1.5rem;
+    color: white;
+    background-color: transparent;
+    border: 1px solid #303030;
+    border-radius: 0.5rem;
+    font-size: clamp(0.7rem, 1vw, 2rem);
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.nav-btn i {
+    font-size: clamp(1.3rem, 1.5vw, 3rem);
+}
+
+.nav-btn:hover {
+    background-color: darkred;
+}
+
+@media (min-width: 1024px) {
+    nav {
+        display: flex;
+        align-items: center;
+        column-gap: 2.5rem;
+    }
+
+    .nav-responsive {
+        display: none;
+    }
+
+    .menu-responsive-btn {
+        display: none;
+    }
+
+    .donate-btn-res {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    header {
+        padding: 0.5rem 1rem;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
+    .menu-responsive-btn {
+        font-size: clamp(1.6rem, 1.1vw, 2.2rem);
+    }
+
+    .donate-btn-res {
+        border: none;
+        outline: none;
+        padding: 0.5rem 1.5rem;
+        color: white;
+        background-color: transparent;
+        border: 1px solid #303030;
+        background-color: darkred;
+        border-radius: 0.5rem;
+        font-size: clamp(0.9rem, 1vw, 2rem);
+        display: flex;
+        align-items: center;
+        column-gap: 1rem;
+        transition: all .3s ease-in;
+        cursor: pointer;
+    }
+
+    .donate-btn-res i {
+        font-size: clamp(1.3rem, 1.5vw, 3rem);
+    }
+
+    .donate-btn-res:hover {
+        background-color: darkred;
+    }
+
+    .menu-responsive-div {
+        width: 100%;
+        height: 100vh;
+        background-color: #0F0F0F;
+        position: fixed;
+        z-index: 1000;
+        padding-top: 3vh;
+        top: 0;
+        left: 0;
+        transform: translateY(100%);
+        transition: all .5s;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .menu-responsive-div>div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
+    .menu-responsive-div>div a {
+        text-decoration: none;
+        color: rgb(192, 190, 190);
+        font-size: 1.2rem;
+        /* text-transform: uppercase; */
+        border: 1px solid #303030;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-responsive-div.active {
+        transform: translateY(0);
+    }
+
+    body.active {
+        overflow: hidden;
+    }
+}

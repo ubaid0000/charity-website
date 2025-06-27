@@ -1,0 +1,74 @@
+.section-causes{
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem;
+}
+.section-causes h1{
+    font-size: clamp(2rem, 2vw, 3rem);
+    font-family: "funnel display";
+    text-align: center;
+}
+
+.section-causes h1 span{
+    font-size: clamp(2rem, 2vw, 3rem);
+    font-family: "funnel display";
+    color: darkred;
+}
+.section-causes p{
+    font-size: clamp(1rem, 1vw, 1.5rem);
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #858585;
+}
+.causes-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+.causes-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 1.5rem 1rem; 
+    border: 1px solid #303030;
+    border-radius: 0.5rem;
+    transition: all .2s;
+    overflow: hidden;
+}
+.causes-card:hover{
+    transform: translateY(-10px) scale(1.03);
+}
+.causes-card:hover img{
+    transform: scale(1.1);
+}
+.causes-card img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    transition: all .2s;
+}
+
+.causes-card h2{
+    font-size: clamp(1.5rem, 2vw, 3rem);
+    font-family: "funnel display",sans-serif;
+}
+.causes-card button{
+    padding: 0.5rem 1rem;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    color: white;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border: 1px solid #303030;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all .2s;
+}
+.causes-card button:hover{
+    background-color: darkred;
+}

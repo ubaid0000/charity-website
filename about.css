@@ -1,0 +1,94 @@
+
+section {
+    padding: 3rem 2rem;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1,
+h2 {
+    color: darkred;
+    text-align: center;
+}
+
+.about-hero p {
+    text-align: center;
+    max-width: 700px;
+    margin: 1rem auto 0;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.mission-vision-values {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+}
+
+.mission-vision-values .box {
+    background: #fff4f4;
+    border-left: 4px solid darkred;
+    padding: 1.5rem;
+    border-radius: 8px;
+    color: black;
+}
+
+.about-story ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 2rem;
+}
+
+.about-story li {
+    background: #f1f1f1;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-left: 4px solid darkred;
+    border-radius: 6px;
+    color: black;
+}
+
+.our-team {
+    text-align: center;
+}
+
+.our-team .team-member {
+    display: inline-block;
+    margin: 1rem;
+    max-width: 200px;
+}
+
+.our-team img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.our-team h3 {
+    margin: 0.5rem 0 0.2rem;
+    color: darkred;
+}
+
+.our-team p {
+    color: #777;
+    font-size: 0.95rem;
+}
+
+
+@media (min-width: 768px) {
+    .mission-vision-values {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .mission-vision-values .box {
+        flex: 1;
+        margin: 0 1rem;
+    }
+
+    .our-team .team-member {
+        margin: 1rem 2rem;
+    }
+}

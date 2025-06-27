@@ -1,0 +1,147 @@
+.section-donation h1 {
+    font-size: clamp(2rem, 2vw, 3rem);
+    font-family: "funnel display";
+    text-align: center;
+    padding: 2rem;
+}
+
+.section-donation h1 span {
+    font-size: clamp(2rem, 2vw, 3rem);
+    font-family: "funnel display";
+    color: darkred;
+}
+
+.section-donation p {
+    font-size: clamp(1rem, 1vw, 1.5rem);
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #858585;
+}
+
+.donation-div {
+    width: 90%;
+    height: auto;
+    padding: 1rem;
+    margin: 0 auto;
+    border: 1px solid #303030;
+    margin-top: 2rem;
+}
+
+.image {
+    width: 100%;
+    height: 15vh;
+    margin-bottom: 1.5rem;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.input-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 1rem 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #303030;
+    border-radius: 5px;
+    outline: none;
+    background-color: transparent;
+}
+
+
+.input-group label {
+    position: absolute;
+    top: 1rem;
+    left: 0.6rem;
+    color: #888;
+    transition: 0.2s ease all;
+    pointer-events: none;
+    padding: 0 0.3rem;
+}
+
+.input-group input {
+    color: white;
+}
+
+.input-group input:focus+label,
+.input-group input:not(:placeholder-shown)+label,
+.input-group textarea:focus+label,
+.input-group textarea:not(:placeholder-shown)+label {
+    top: -0.6rem;
+    left: 0.5rem;
+    font-size: 0.8rem;
+    background-color: #0f0f0f;
+}
+
+.input-group textarea {
+    resize: none;
+}
+
+form button {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    background: darkred;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: crimson;
+}
+
+.modal {
+    background-color: rgb(255, 255, 255);
+    padding: 2rem;
+    color: darkred;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.modal button {
+    width: 100%;
+    background: transparent;
+    background-color: darkred;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 0.5rem 1rem;
+}
+
+@media (min-width: 768px) {
+
+    .donation-div {
+        width: 70%;
+        height: auto;
+        padding: 1rem;
+        margin: 0 auto;
+        border: 1px solid #303030;
+        margin-top: 2rem;
+    }
+    .image {
+        width: 100%;
+        height: 25vh;
+        margin-bottom: 1.5rem;
+    }
+    .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+}

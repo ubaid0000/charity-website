@@ -1,0 +1,143 @@
+.section-volunteer{
+    width: 100%;
+    min-height: 100vh;
+    padding: 1.5rem;
+}
+
+.section-volunteer h1{
+    font-size: clamp(2rem, 2vw, 3rem);
+    font-family: "funnel display";
+    text-align: center;
+}
+
+.section-volunteer h1 span{
+    font-size: clamp(2rem, 2vw, 3rem);
+    font-family: "funnel display";
+    color: darkred;
+}
+.section-volunteer p{
+    font-size: clamp(1rem, 1vw, 1.5rem);
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #858585;
+}
+.volunteer-form{
+    margin-top: 2rem;
+}
+.input-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 1rem 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #303030;
+    border-radius: 5px;
+    outline: none;
+    background-color: transparent;
+}
+
+
+.input-group label {
+    position: absolute;
+    top: 1rem;
+    left: 0.6rem;
+    color: #888;
+    transition: 0.2s ease all;
+    pointer-events: none;
+    padding: 0 0.3rem;
+}
+
+.input-group input {
+    color: white;
+}
+
+.input-group input:focus+label,
+.input-group input:not(:placeholder-shown)+label,
+.input-group textarea:focus+label,
+.input-group textarea:not(:placeholder-shown)+label {
+    top: -0.6rem;
+    left: 0.5rem;
+    font-size: 0.8rem;
+    background-color: #0f0f0f;
+}
+
+.input-group textarea {
+    resize: none;
+    color: white;
+}
+
+form button {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    background: darkred;
+    color: white;
+    font-size: clamp(1rem, 1vw, 1.2rem);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: crimson;
+}
+
+@media (min-width: 768px) {
+    .volunteer-form{
+        width: 50%;
+        margin: 5rem auto;
+    }
+}
+
+
+.testimonials-section {
+    padding: 2rem 2rem;
+    text-align: center;
+    background-color: rgb(214, 214, 214);
+  }
+  
+  .testimonials-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: black;
+    font-family: "funnel display",sans-serif;
+  }
+  
+  .testimonial {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-inline: auto;
+    text-align: left;
+  }
+  
+  .testimonial img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .testimonial-content h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: darkred;
+  }
+  
+  .testimonial-content .role {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 0.5rem;
+  }
+  
+  .testimonial-content .message {
+    font-style: italic;
+    color: #444;
+  }
+  

@@ -1,0 +1,96 @@
+.section-contact{
+    width: 100%;
+    min-height: 100vh;
+    padding: 1.5rem;
+}
+
+.section-contact h1{
+    font-size: clamp(2rem, 2vw, 3rem);
+    font-family: "funnel display";
+    text-align: center;
+}
+
+.section-contact h1 span{
+    font-size: clamp(2rem, 2vw, 3rem);
+    font-family: "funnel display";
+    color: darkred;
+}
+.section-contact p{
+    font-size: clamp(1rem, 1vw, 1.5rem);
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #858585;
+}
+
+
+
+.contact-form{
+    margin-top: 2rem;
+}
+.input-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 1rem 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #303030;
+    border-radius: 5px;
+    outline: none;
+    background-color: transparent;
+}
+
+
+.input-group label {
+    position: absolute;
+    top: 1rem;
+    left: 0.6rem;
+    color: #888;
+    transition: 0.2s ease all;
+    pointer-events: none;
+    padding: 0 0.3rem;
+}
+
+.input-group input {
+    color: white;
+}
+
+.input-group input:focus+label,
+.input-group input:not(:placeholder-shown)+label,
+.input-group textarea:focus+label,
+.input-group textarea:not(:placeholder-shown)+label {
+    top: -0.6rem;
+    left: 0.5rem;
+    font-size: 0.8rem;
+    background-color: #0f0f0f;
+}
+
+.input-group textarea {
+    resize: none;
+    color: white;
+}
+
+form button {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    background: darkred;
+    color: white;
+    font-size: clamp(1rem, 1vw, 1.2rem);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+form button:hover{
+    background-color: crimson;
+}
+
+@media (min-width: 768px) {
+    .contact-form{
+        width: 50%;
+        margin: 5rem auto;
+    }
+}

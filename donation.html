@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="donation.css">
+</head>
+
+<body>
+    <div class="menu-responsive-div">
+        <div>
+            <a href="index.html">Home</a>
+            <a href="causes.html">Causes</a>
+            <a href="donation.html">Donation</a>
+            <a href="volunteer.html">Volunteer</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+        </div>
+        <button class="donate-btn-res"><i class="ri-hand-heart-fill"></i>Donate Now</button>
+    </div>
+    <header>
+        <div class="logo">
+            <h1>Kind<span>Heart</span></h1>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="causes.html">Causes</a>
+            <a href="donation.html">Donation</a>
+            <a href="volunteer.html">Volunteer</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+        </nav>
+        <i class="ri-menu-3-line menu-responsive-btn"></i>
+        <button class="nav-btn"><i class="ri-hand-heart-fill"></i>Donate Now</button>
+    </header>
+
+    <section class="section-donation">
+        <h1>Make a <span>Difference</span></h1>
+        <p>Your donation helps children get education, food, and care they deserve.</p>
+        <div class="donation-div">
+            <div class="image">
+                <img src="assets/donation.jpg" alt="Donation">
+            </div>
+            <form id="donation-form">
+                <div class="input-group">
+                    <input type="text" id="name" required placeholder=" " />
+                    <label for="name">Full Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" required placeholder=" " />
+                    <label for="email">Email Address</label>
+                </div>
+                <div class="input-group">
+                    <input type="number" id="amount" required placeholder=" " min="1" />
+                    <label for="amount">Donation Amount (USD)</label>
+                </div>
+                <div class="input-group">
+                    <textarea id="message" rows="3" placeholder=" "></textarea>
+                    <label for="message">Message (optional)</label>
+                </div>
+
+                <button type="submit">Donate Now</button>
+            </form>
+
+        </div>
+        <div class="modal">
+            <h1>Thanks For Your Sharing!</h1>
+            <button onclick="closeModal()">Close</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-1">
+            <div class="logo"><h1>Kind<span>Heart</span><br> Help Humanities!</h1></div>
+            <div class="social-footer">
+                <i class="ri-instagram-fill"></i>
+                <i class="ri-facebook-circle-fill"></i>
+                <i class="ri-twitter-x-fill"></i>
+            </div>
+        </div>
+        <div class="footer-2">
+            <div>
+                <button><i style="margin-right: 1rem;" class="ri-hand-heart-fill"></i>Donate Now</button>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="menuhandler.js"></script>
+    <script src="donation.js"></script>
+</body>
+
+</html>
